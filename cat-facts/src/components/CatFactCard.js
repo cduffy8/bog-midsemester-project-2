@@ -1,9 +1,8 @@
 function CatFactCard(props) {
-    const { data } = props;
+    const { index, facts } = props;
     return (
         <div>
-        <button>{data[0]}</button>
-        <button>{data[1]}</button>
+            {facts[index]}
         </div>
     );
 }
